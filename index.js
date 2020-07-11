@@ -15,14 +15,14 @@ room
     .addUser(user3)
 room.removeUser(user3)
 console.log(room.state)
-// room.addUser(user4)
-// room.addUser(user5)
-// console.log(room.state)
-// user5.disconnect()
-// console.log(room.state)
-//
-// user1.once('foo', console.log)
-// user1.on('foo', console.log)
-// setInterval(() => {
-//     user1.emit('foo', { foo: 'bar' })
-// }, 1000)
+room.addUser(user4)
+room.addUser(user5)
+console.log(room.state)
+user5.disconnect()
+console.log(room.state)
+
+user1.once('foo', console.log)
+user1.on('foo', console.log)
+setInterval(() => {
+    user1.emit('foo', { foo: 'bar' })
+}, 1000)
